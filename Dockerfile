@@ -2,9 +2,9 @@ FROM mcr.microsoft.com/dotnet/sdk:3.1 AS builder
 
 WORKDIR /app
 
-COPY ./
+COPY ./ ./
 
-WORKDIR /app/AppVenta.Infraestructura.API/
+WORKDIR /app/RetoBCP.Infraestructura.API/
 
 RUN dotnet restore
 
