@@ -48,8 +48,8 @@ namespace RetoBCP.Infraestructura.API.Controllers
         public ActionResult Post([FromBody] BcpTipoCambio tipoCambio)
         {
             var servicio = CrearServicio();
-            servicio.Agregar(tipoCambio);
-            return Ok("Ingresado Correctamente");
+            var resultado = servicio.Agregar(tipoCambio);
+            return Ok(resultado);
         }
 
         // PUT api/<BcpTipoCambioController>/5
