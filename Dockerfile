@@ -18,4 +18,4 @@ COPY --from=builder /app/build/ ./
 
 EXPOSE 80
 
-ENTRYPOINT ["dotnet", "AppVenta.Infraestructura.API.dll"]
+ENTRYPOINT ["dotnet", "RetoBCP.Infraestructura.API.dll"]
