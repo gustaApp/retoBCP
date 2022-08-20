@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "RetoBCP.Aplicacion/1.0.0": {
+        "dependencies": {
+          "RetoBCP.Dominio": "1.0.0"
+        },
+        "runtime": {
+          "RetoBCP.Aplicacion.dll": {}
+        }
+      },
+      "RetoBCP.Dominio/1.0.0": {
+        "runtime": {
+          "RetoBCP.Dominio.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "RetoBCP.Aplicacion/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "RetoBCP.Dominio/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

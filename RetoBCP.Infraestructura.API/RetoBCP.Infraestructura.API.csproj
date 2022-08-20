@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RetoBCP.Aplicacion\RetoBCP.Aplicacion.csproj" />
+    <ProjectReference Include="..\RetoBCP.Dominio\RetoBCP.Dominio.csproj" />
+    <ProjectReference Include="..\RetoBCP.Infraestructura.Datos\RetoBCP.Infraestructura.Datos.csproj" />
+  </ItemGroup>
+
+
+</Project>
