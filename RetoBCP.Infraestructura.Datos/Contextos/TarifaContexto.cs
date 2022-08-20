@@ -24,7 +24,8 @@ namespace RetoBCP.Infraestructura.Datos.Contextos
         public DbSet<Tarifa> Tarifas { get; set; }
         public DbSet<BcpTipoCambio> BcpTipoCambios { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder options) {
-            options.UseSqlServer("Server=tcp:serverretobcp.database.windows.net,1433;Initial Catalog=app-tipocambio;Persist Security Info=False;User ID=adminretobcp;Password=@dminretoBCP;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+            //options.UseSqlServer("Server=tcp:serverretobcp.database.windows.net,1433;Initial Catalog=app-tipocambio;Persist Security Info=False;User ID=adminretobcp;Password=@dminretoBCP;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+            options.UseSqlServer($"Server={SERVER},{PORT};Initial Catalog={DATABASE};Persist Security Info=False;User ID={USERNAME};Password={PASSWORD};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate={TRUST_SERVER_CERTIFICATE}; Integrated Security={INTEGRATED_SECURITY};Connection Timeout=30;");
         
         }
         protected override void OnModelCreating(ModelBuilder builder)
