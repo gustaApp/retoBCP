@@ -8,7 +8,7 @@ namespace RetoBCP.Dominio
     {
         public Guid Id { get; set; }
 
-        //public Guid TarifaId { get; set; }
+        public double TipoCambio{ get; set; }
         public double Monto { get; set; }
         public string MonedaOrigen { get; set; }
         public string MonedaDestino { get; set; }

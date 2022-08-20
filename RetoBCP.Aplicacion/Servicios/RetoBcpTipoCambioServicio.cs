@@ -25,7 +25,7 @@ namespace RetoBCP.Aplicacion.Servicios
                 throw new ArgumentNullException("La Tipo Cambio es requerida.");
             
             var resultadoTarifa = repoTarifa.SeleccionarPorMoneda(entidad.MonedaOrigen, entidad.MonedaDestino);
-
+            entidad.TipoCambio = resultadoTarifa.TipoCambio;
             entidad.MontoConvertido = entidad.Monto * resultadoTarifa.TipoCambio;
 
             var resultadoTipoCambio = repoTipoCambio.Agregar(entidad);
